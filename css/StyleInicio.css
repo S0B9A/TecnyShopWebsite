@@ -21,7 +21,7 @@ img {
 
 /* Contenedor principal */
 .container {
-    max-width: 1600px;
+    max-width: 100%;
     display: flex;
 }
 
