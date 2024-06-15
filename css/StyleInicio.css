@@ -277,9 +277,9 @@ hr {
     margin-top: 60px;
 }
 
-.diferenciales-content :hover{
+.diferenciales-content :hover:not(p):not(h4) {
     font-weight: bold;
-    color: #E96C12;
+    border: solid chocolate;
 }
 
 .diferencial-1 {
@@ -291,6 +291,7 @@ hr {
     border-radius: 7px;
     width: 40%;
 }
+
 
 .diferencial-1 h4 {
     color: black;
