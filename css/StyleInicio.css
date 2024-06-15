@@ -255,6 +255,12 @@ hr {
 .about-img img {
     width: 58%;
     border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.about-img img:hover {
+    border: solid chocolate;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 }
 
 /*Section diferenciales*/
@@ -265,7 +271,7 @@ hr {
     text-align: center;
 }
 
-.diferenciales span{
+.diferenciales span {
     color: #E96C12;
     font-weight: bold;
 }
