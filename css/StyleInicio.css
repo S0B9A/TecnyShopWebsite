@@ -298,7 +298,6 @@ hr {
     width: 40%;
 }
 
-
 .diferencial-1 h4 {
     color: black;
     font-size: 15px;
@@ -318,4 +317,129 @@ hr {
     border: 4px solid #E96C12;
     margin-bottom: 15px;
     background-color: white;
+}
+
+/*Section de servicios*/
+
+.Servicios {
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Servicios span {
+    color: #E96C12;
+    font-weight: bold;
+}
+
+.Servicios hr {
+    width: 5%;
+}
+
+.Servicios-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.Servicios-content :hover:not(p):not(h3){
+    font-weight: bold;
+    border: solid chocolate;
+}
+
+.Servicio-1 {
+    flex-basis: calc(33.3% - 20px);
+    border: 1px solid #E96C12;
+    padding: 30px 50px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.Servicio-1 span {
+    font-size:  16px;
+    font-weight: 800;
+    color:#E96C12
+}
+
+.Servicio-1 h3 {
+    padding: 8px;
+    font-size: 20px;
+    color: #FFFFFF;
+    margin: 25px 0 35px 0;
+    background: linear-gradient( 
+    90deg,
+    rgba(245,99,72,1) 0%,
+    rgba(254,140,32,1) 100%
+    );
+}
+
+.Servicio-1 p {
+    margin-bottom: 20px;
+}
+
+/*Section de informacion*/
+
+.informacion{
+    margin-top: 60px;
+    background-color: #E3E3E3;
+}
+
+.informacion-content{
+    display: flex;
+    flex-wrap: wrap; /* Asegura que el contenido se ajuste bien en pantallas pequeñas */
+}
+
+.informacion-txt {
+    flex-basis: 50%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 80px 0 0 0;
+}
+
+.informacion-txt :hover{
+   font-weight: bold;
+}
+
+.informacion-txt span {
+    font-size:  13px;
+    font-weight: 800;
+    color:#E96C12;
+    margin-top: 30px;
+}
+
+.informacion-txt h3{
+    font-size:  25px;
+    margin-top: 6px;
+    color: #536B83;
+}
+
+.informacion-txt hr {
+    margin-top: 10px;
+    margin-left: 12px;
+    height: 2px; /* Ajusta el grosor */
+}
+
+::placeholder{
+    color: #536B83;
+}
+
+.informacion-img {
+    flex-basis: 50%;
+    display: flex; /* Añadir display flex para centrar la imagen */
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+}
+
+.informacion-img :hover{
+    border: solid chocolate;
+}
+
+.informacion-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Hace que la imagen cubra todo el espacio sin distorsionarse */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    filter: brightness(0.7); /* Aplica un filtro oscuro */
 }
