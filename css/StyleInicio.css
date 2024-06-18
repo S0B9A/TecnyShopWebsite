@@ -344,7 +344,7 @@ hr {
     margin-top: 25px;
 }
 
-.Servicios-content :hover:not(p):not(h3){
+.Servicios-content :hover:not(p):not(h3) {
     font-weight: bold;
     border: solid chocolate;
 }
@@ -358,9 +358,9 @@ hr {
 }
 
 .Servicio-1 span {
-    font-size:  16px;
+    font-size: 16px;
     font-weight: 800;
-    color:#E96C12
+    color: #E96C12
 }
 
 .Servicio-1 h3 {
@@ -368,11 +368,9 @@ hr {
     font-size: 20px;
     color: #FFFFFF;
     margin: 25px 0 35px 0;
-    background: linear-gradient( 
-    90deg,
-    rgba(245,99,72,1) 0%,
-    rgba(254,140,32,1) 100%
-    );
+    background: linear-gradient(90deg,
+            rgba(245, 99, 72, 1) 0%,
+            rgba(254, 140, 32, 1) 100%);
 }
 
 .Servicio-1 p {
@@ -381,14 +379,15 @@ hr {
 
 /*Section de informacion*/
 
-.informacion{
+.informacion {
     margin-top: 60px;
     background-color: #E3E3E3;
 }
 
-.informacion-content{
+.informacion-content {
     display: flex;
-    flex-wrap: wrap; /* Asegura que el contenido se ajuste bien en pantallas pequeñas */
+    flex-wrap: wrap;
+    /* Asegura que el contenido se ajuste bien en pantallas pequeñas */
 }
 
 .informacion-txt {
@@ -398,19 +397,19 @@ hr {
     padding: 80px 0 0 0;
 }
 
-.informacion-txt :hover{
-   font-weight: bold;
+.informacion-txt :hover {
+    font-weight: bold;
 }
 
 .informacion-txt span {
-    font-size:  13px;
+    font-size: 13px;
     font-weight: 800;
-    color:#E96C12;
+    color: #E96C12;
     margin-top: 30px;
 }
 
-.informacion-txt h3{
-    font-size:  25px;
+.informacion-txt h3 {
+    font-size: 25px;
     margin-top: 6px;
     color: #536B83;
 }
@@ -418,30 +417,100 @@ hr {
 .informacion-txt hr {
     margin-top: 10px;
     margin-left: 12px;
-    height: 2px; /* Ajusta el grosor */
+    height: 2px;
+    /* Ajusta el grosor */
 }
 
-::placeholder{
+::placeholder {
     color: #536B83;
 }
 
 .informacion-img {
     flex-basis: 50%;
-    display: flex; /* Añadir display flex para centrar la imagen */
-    align-items: center; /* Centrar verticalmente */
-    justify-content: center; /* Centrar horizontalmente */
+    display: flex;
+    /* Añadir display flex para centrar la imagen */
+    align-items: center;
+    /* Centrar verticalmente */
+    justify-content: center;
+    /* Centrar horizontalmente */
 }
 
-.informacion-img :hover{
+.informacion-img :hover {
     border: solid chocolate;
 }
 
-.informacion-img img{
+.informacion-img img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Hace que la imagen cubra todo el espacio sin distorsionarse */
+    object-fit: cover;
+    /* Hace que la imagen cubra todo el espacio sin distorsionarse */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-    filter: brightness(0.7); /* Aplica un filtro oscuro */
+    filter: brightness(0.7);
+    /* Aplica un filtro oscuro */
 }
 
-/*Prueba*/
+/*Section de productos*/
+
+.productos {
+    padding: 100px 0; /* Reducido el padding superior e inferior */
+    text-align: center;
+    background-color: white;
+    width: 100%;
+}
+
+.productos span{
+    font-size: 16px;
+    font-weight: 800;
+    color: #E96C12
+}
+
+.productos hr{
+    margin: 0 auto; /* Centrar horizontalmente el hr */
+    width: 50%; /* Ajustar el ancho del hr */
+    border: none; /* Asegurar que no haya borde */
+    border-top: 1px solid #E96C12 /* Estilo de la línea */
+}
+
+.productos-content {
+    display: flex;
+    margin-top: 35px;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que los productos se envuelvan en varias líneas */
+}
+
+.productos-content :hover:not(p):not(h3):not(span):not(.producto-txt) {
+    border: solid chocolate;
+}
+
+.producto-1 {
+    margin: 30px;
+    flex-basis: calc(30% - 150px); /* Ajustado el tamaño de cada producto */
+    background-color: #f1f0f0;
+    border: 1px solid #536B83;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.producto-1 img {
+    margin-bottom: 10px; /* Margen inferior de la imagen reducido */
+    width: 100%; /* Ancho de la imagen ajustado para ocupar todo el espacio disponible */
+}
+
+.producto-txt {
+    padding: 15px; /* Padding del texto reducido */
+}
+
+.producto-txt span {
+    color: #536B83;
+    font-size: 15px;
+}
+
+.producto-txt h3 {
+    color: #E96C12;
+    font-size: 16px; /* Tamaño del título reducido */
+    margin: 10px 0; /* Margen del título ajustado */
+}
+
+.producto-txt p {
+    font-size: 12px;
+}
