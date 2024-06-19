@@ -97,7 +97,67 @@ img {
 .itemNav:hover::after {
     width: 100%;
 }
+/*Footer*/
+footer{
+    background-color: #536B83;
+    color: #fff;
+    padding: 70px 0;
+    margin-top: 10%;
+}
+.footer-fila{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10%;
+}
+.footer-columna{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-columna hr{
+    border: 1px solid #E96C12;
+    width: 20%;
+    margin: 4% 0 4%;
+}
+.footer-columna h4{
+    text-transform: capitalize;
+    position: relative;
+}
+.footer-columna ul{
+    margin-top: 10%;
+}
+.footer-columna ul li {
+    margin-bottom: 25px;
+}
+.footer-columna ul li a{
+    font-size: .9rem;
+    color: #fff;
+    transition: all 300ms ease;
+}
+.footer-columna ul li a:hover{
+    padding-left: 8px;
+}
 
+/*Social Links*/
+.social-links{
+    margin-top: 9%;
+}
+.social-links a{
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 40px;
+    width: 40px;
+    margin: 0 10px 10px 0;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1.1rem;
+    transition: all 0.5s ease;
+}
+.social-links a:hover{
+    color: #000;
+    background-color: #fff;
+}
 /* Contenido del header */
 .header-content {
     width: 100%;
@@ -296,6 +356,7 @@ hr {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
     border-radius: 7px;
     width: 40%;
+    transition: all 300ms ease;
 }
 
 .diferencial-1 h4 {
@@ -355,6 +416,7 @@ hr {
     padding: 30px 50px;
     text-align: center;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    transition: all 300ms ease;
 }
 
 .Servicio-1 span {
