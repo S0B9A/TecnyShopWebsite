@@ -7,6 +7,12 @@
     list-style: none;
 }
 
+h3 {
+    font-size: 13px;
+    padding-left: 15px;
+    color: #536B83;
+}
+
 /* Fuente principal */
 body {
     font-family: "Montserrat", sans-serif;
@@ -98,51 +104,61 @@ img {
 .itemNav:hover::after {
     width: 100%;
 }
+
 /*Footer*/
-footer{
+footer {
     background-color: #536B83;
     color: #fff;
     padding: 70px 0;
     margin-top: 10%;
 }
-.footer-fila{
+
+.footer-fila {
     display: flex;
     flex-wrap: wrap;
     margin-left: 10%;
 }
-.footer-columna{
+
+.footer-columna {
     width: 25%;
     padding: 0 15px;
 }
-.footer-columna hr{
+
+.footer-columna hr {
     border: 1px solid #E96C12;
     width: 20%;
     margin: 4% 0 4%;
 }
-.footer-columna h4{
+
+.footer-columna h4 {
     text-transform: capitalize;
     position: relative;
 }
-.footer-columna ul{
+
+.footer-columna ul {
     margin-top: 10%;
 }
+
 .footer-columna ul li {
     margin-bottom: 25px;
 }
-.footer-columna ul li a{
+
+.footer-columna ul li a {
     font-size: .9rem;
     color: #fff;
     transition: all 300ms ease;
 }
-.footer-columna ul li a:hover{
+
+.footer-columna ul li a:hover {
     padding-left: 8px;
 }
 
 /*Social Links*/
-.social-links{
+.social-links {
     margin-top: 9%;
 }
-.social-links a{
+
+.social-links a {
     display: inline-block;
     background-color: rgba(255, 255, 255, 0.2);
     height: 40px;
@@ -155,7 +171,8 @@ footer{
     font-size: 1.1rem;
     transition: all 0.5s ease;
 }
-.social-links a:hover{
+
+.social-links a:hover {
     color: #000;
     background-color: #fff;
 }
@@ -169,8 +186,8 @@ footer{
     justify-content: flex-end;
     margin-top: 30px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
-    padding-bottom: 30px;
-    padding-left: 100px;
+    padding-bottom: 10px;
+    padding-left: 200px;
 }
 
 .header-txt {
@@ -201,34 +218,9 @@ footer{
 }
 
 .imgMuestra {
-    padding-left:  60px;
-}
-
-.butons {
-    display: flex;
-}
-
-.btn-1,
-.btn-2 {
-    display: inline-block;
-    padding: 13px 25px;
-    color: white;
-    text-transform: capitalize;
-    margin-bottom: 20px;
-    border-radius: 8px;
-}
-
-.butons :hover {
-    font-weight: bold;
-}
-
-.btn-1 {
-    background-color: #E96C12;
-    margin-right: 20px;
-}
-
-.btn-2 {
-    background-color: #536B83;
+    width: 68%;
+    padding-left: 60px;
+    margin-bottom: 50px;
 }
 
 /* Productos */
@@ -236,6 +228,8 @@ footer{
 .productos {
     padding: 50px 0 50px 80px;
     position: relative;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+
 }
 
 .txt {
@@ -252,6 +246,7 @@ footer{
 
 .productos-content {
     display: flex;
+    
 }
 
 .producto img {
@@ -270,4 +265,96 @@ footer{
     font-size: 13px;
     padding-left: 15px;
     color: #536B83;
+}
+
+/* about */
+
+.about {
+    padding: 100px 50px;
+}
+
+.about-content {
+    display: flex;
+}
+
+.about-1 {
+    width: 50%;
+}
+
+.about-1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.2)),
+        url(../Images/XiaomiNews/XiaomiSerie14New.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 25px;
+    display: flex;
+    align-items: end;
+    height: 500px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.about-1 img {
+    width: 15%;
+}
+
+.about-1 h3 {
+    font-size: 12px;
+    color: #E0FFFF;
+    margin-left: 15px;
+}
+
+.about-2 {
+    width: 50%;
+    margin-left: 10px;
+}
+
+.about-in1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1),
+            rgba(0, 0, 0, 0.1)),
+        url(../Images/XiaomiNews/MijiaSmartNew.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 25px;
+    display: flex;
+    align-items: end;
+    height: 245px;
+    margin-bottom: 10px;
+}
+
+.about-in1 img {
+    width: 12%;
+}
+
+.about-in1 h3 {
+    font-size: 12px;
+    color: #E0FFFF;
+    margin-left: 15px;
+}
+
+.about-in2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1),
+            rgba(0, 0, 0, 0.1)),
+        url(../Images/XiaomiNews/XiaomiEV.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 25px;
+    display: flex;
+    align-items: end;
+    height: 245px;
+    margin-bottom: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.about-in2 img {
+    width: 12%;
+}
+
+.about-in2 h3 {
+    font-size: 12px;
+    color: #E0FFFF;
+    margin-left: 15px;
 }
