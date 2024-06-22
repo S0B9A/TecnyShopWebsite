@@ -256,7 +256,8 @@ footer {
 }
 
 .producto img:hover {
-
+    
+    transition: all 240ms ease;
     border: solid chocolate;
     width: 185px;
 
@@ -303,6 +304,7 @@ footer {
 }
 
 .about-1:hover {
+    transition: all 150ms ease;
     border: solid chocolate;
 }
 
@@ -311,6 +313,7 @@ footer {
 }
 
 .about-1 img:hover {
+    transition: all 150ms ease;
     width: 14%;
 }
 
@@ -340,6 +343,7 @@ footer {
 }
 
 .about-in1:hover {
+    transition: all 150ms ease;
     border: solid chocolate;
 }
 
@@ -348,6 +352,7 @@ footer {
 }
 
 .about-in1 img:hover {
+    transition: all 150ms ease;
     width: 11%;
 }
 
@@ -373,6 +378,7 @@ footer {
 }
 
 .about-in2:hover {
+    transition: all 150ms ease;
     border: solid chocolate;
 }
 
@@ -381,6 +387,7 @@ footer {
 }
 
 .about-in2 img:hover {
+    transition: all 250ms ease;
     width: 11%;
 }
 
@@ -422,6 +429,7 @@ footer {
 }
 
 .news-1 img:hover {
+    transition: all 300ms ease;
     width: 32%;
     border: solid chocolate;
 }

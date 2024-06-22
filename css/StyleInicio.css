@@ -211,6 +211,7 @@ footer{
 }
 
 .butons :hover {
+    transition: all 250ms ease;
     font-weight: bold;
 }
 
@@ -319,6 +320,7 @@ hr {
 }
 
 .about-img img:hover {
+    transition: all 250ms ease;
     border: solid chocolate;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 }
@@ -344,6 +346,7 @@ hr {
 }
 
 .diferenciales-content :hover:not(p):not(h4) {
+    transition: all 250ms ease;
     font-weight: bold;
     border: solid chocolate;
 }
@@ -406,6 +409,7 @@ hr {
 }
 
 .Servicios-content :hover:not(p):not(h3) {
+    transition: all 250ms ease;
     font-weight: bold;
     border: solid chocolate;
 }
@@ -460,6 +464,7 @@ hr {
 }
 
 .informacion-txt :hover {
+    transition: all 250ms ease;
     font-weight: bold;
 }
 
@@ -498,6 +503,7 @@ hr {
 }
 
 .informacion-img :hover {
+    transition: all 250ms ease;
     border: solid chocolate;
 }
 
@@ -541,6 +547,7 @@ hr {
 }
 
 .productos-content :hover:not(p):not(h3):not(span):not(.producto-txt) {
+    transition: all 150ms ease;
     border: solid chocolate;
 }
 
