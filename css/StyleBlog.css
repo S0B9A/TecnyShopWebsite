@@ -5,12 +5,7 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-}
-
-h3 {
-    font-size: 13px;
-    padding-left: 15px;
-    color: #536B83;
+    scroll-behavior: smooth;
 }
 
 /* Fuente principal */
@@ -19,16 +14,16 @@ body {
     background-color: white;
 }
 
-/* Imágenes responsivas */
-img {
-    max-width: 100%;
-    width: 70%;
-}
-
 /* Contenedor principal */
 .container {
     max-width: 100%;
     margin: 0 auto;
+}
+
+/* Imágenes responsivas */
+img {
+    max-width: 100%;
+    width: 70%;
 }
 
 /* Header */
@@ -57,8 +52,7 @@ img {
     color: #E96C12;
     text-transform: uppercase;
     font-weight: 700;
-    margin-bottom: 10px;
-    margin-left: 25px;
+    margin: 0 0 10px 25px;
 }
 
 .LogoImg {
@@ -105,7 +99,7 @@ img {
     width: 100%;
 }
 
-/*Footer*/
+/* Footer */
 footer {
     background-color: #536B83;
     color: #fff;
@@ -126,7 +120,7 @@ footer {
 .footer-columna hr {
     border: 1px solid #E96C12;
     width: 20%;
-    margin: 4% 0 4%;
+    margin: 4% 0;
 }
 
 .footer-columna h4 {
@@ -152,7 +146,7 @@ footer {
     padding-left: 8px;
 }
 
-/*Social Links*/
+/* Social Links */
 .social-links {
     margin-top: 9%;
 }
@@ -177,7 +171,6 @@ footer {
 }
 
 /* Contenido del header */
-
 .header-content {
     width: 100%;
     display: flex;
@@ -185,8 +178,7 @@ footer {
     justify-content: flex-end;
     margin-top: 30px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
-    padding-bottom: 10px;
-    padding-left: 200px;
+    padding: 0 0 10px 200px;
 }
 
 .header-txt {
@@ -223,12 +215,10 @@ footer {
 }
 
 /* Productos */
-
 .productos {
     padding: 50px 0 50px 80px;
     position: relative;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
-
 }
 
 .txt {
@@ -245,21 +235,18 @@ footer {
 
 .productos-content {
     display: flex;
-
 }
 
 .producto img {
     margin: 0 5px;
     width: 190px;
     border-radius: 15px;
+    transition: all 240ms ease;
 }
 
 .producto img:hover {
-    
-    transition: all 240ms ease;
     border: solid chocolate;
     width: 185px;
-
 }
 
 .producto-nombre {
@@ -274,8 +261,7 @@ footer {
     color: #536B83;
 }
 
-/* about */
-
+/* About */
 .about {
     padding: 100px 50px;
 }
@@ -284,39 +270,37 @@ footer {
     display: flex;
 }
 
-.about-1 {
-    width: 50%;
-}
-
-.about-1 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2),
-            rgba(0, 0, 0, 0.2)),
-        url(../Images/XiaomiNews/XiaomiSerie14New.jpeg);
+.about-1, .about-in1, .about-in2 {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 25px;
     display: flex;
     align-items: end;
-    height: 500px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    transition: all 150ms ease;
 }
 
-.about-1:hover {
-    transition: all 150ms ease;
+.about-1 {
+    width: 50%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../Images/XiaomiNews/XiaomiSerie14New.jpeg);
+    height: 500px;
+}
+
+.about-1:hover, .about-in1:hover, .about-in2:hover {
     border: solid chocolate;
 }
 
-.about-1 img {
-    width: 15%;
-}
-
-.about-1 img:hover {
+.about-1 img, .about-in1 img, .about-in2 img {
+    width: 10%;
     transition: all 150ms ease;
-    width: 14%;
 }
 
-.about-1 h3 {
+.about-1 img:hover, .about-in1 img:hover, .about-in2 img:hover {
+    width: 13%;
+}
+
+.about-1 h3, .about-in1 h3, .about-in2 h3 {
     font-size: 12px;
     color: #E0FFFF;
     margin-left: 15px;
@@ -327,77 +311,20 @@ footer {
     margin-left: 10px;
 }
 
-.about-in1 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1),
-            rgba(0, 0, 0, 0.1)),
-        url(../Images/XiaomiNews/MijiaSmartNew.webp);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 25px;
-    display: flex;
-    align-items: end;
+.about-in1, .about-in2 {
     height: 245px;
     margin-bottom: 10px;
 }
 
-.about-in1:hover {
-    transition: all 150ms ease;
-    border: solid chocolate;
-}
-
-.about-in1 img {
-    width: 12%;
-}
-
-.about-in1 img:hover {
-    transition: all 150ms ease;
-    width: 11%;
-}
-
-.about-in1 h3 {
-    font-size: 12px;
-    color: #E0FFFF;
-    margin-left: 15px;
+.about-in1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../Images/XiaomiNews/MijiaSmartNew.webp);
 }
 
 .about-in2 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1),
-            rgba(0, 0, 0, 0.1)),
-        url(../Images/XiaomiNews/XiaomiEV.jpeg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 25px;
-    display: flex;
-    align-items: end;
-    height: 245px;
-    margin-bottom: 10px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
-}
-
-.about-in2:hover {
-    transition: all 150ms ease;
-    border: solid chocolate;
-}
-
-.about-in2 img {
-    width: 12%;
-}
-
-.about-in2 img:hover {
-    transition: all 250ms ease;
-    width: 11%;
-}
-
-.about-in2 h3 {
-    font-size: 12px;
-    color: #E0FFFF;
-    margin-left: 15px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../Images/XiaomiNews/XiaomiEV.jpeg);
 }
 
 /* News */
-
 .news {
     padding: 20px 50px;
 }
@@ -425,10 +352,10 @@ footer {
     width: 35%;
     border-radius: 15px;
     box-shadow: 0 0 17px rgba(0, 0, 0, 0.4);
+    transition: all 300ms ease;
 }
 
 .news-1 img:hover {
-    transition: all 300ms ease;
     width: 32%;
     border: solid chocolate;
 }
@@ -440,10 +367,11 @@ footer {
 .news-right h3 {
     color: #E96C12;
     margin-bottom: 10px;
+    font-size: 15px;
 }
 
 .news-right p {
-    font-size: 15px;
+    font-size: 13px;
     color: #536B83;
     margin-bottom: 20px;
 }

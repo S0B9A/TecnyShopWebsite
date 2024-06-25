@@ -5,6 +5,7 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    scroll-behavior: smooth;
 }
 
 /* Fuente principal */
@@ -234,6 +235,7 @@ img {
     text-transform: uppercase;
     color: #E96C12;
     font-weight: bold;
+    
 }
 
 h2 {
@@ -486,9 +488,10 @@ hr {
     flex-wrap: wrap; /* Permite que los productos se envuelvan en varias líneas */
 }
 
-.productos-content :hover:not(p):not(h3):not(span):not(.producto-txt) {
-    transition: all 150ms ease;
-    border: solid chocolate;
+.productos-content :hover:not(p):not(h3):not(span):not(.producto-txt):not(img) {
+    transition: all 300ms ease;
+    transform: translateY(-3%);
+    box-shadow: 0 .3rem 5rem rgba(0, 0, 0, 0.3);
 }
 
 .producto-1 {
