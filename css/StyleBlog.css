@@ -5,7 +5,10 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+<<<<<<< HEAD
     scroll-behavior: smooth;
+=======
+>>>>>>> d92ac0d29cf4307a0851e428d03db347b74b005e
 }
 
 /* Fuente principal */
