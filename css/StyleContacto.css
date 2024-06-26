@@ -194,7 +194,7 @@ footer{
     width: 50%;
     display: flex;
     flex-direction: column;
-    margin-left: 30%;
+    margin-left: 25%;
 }
 .box-contacto{
     position: relative;
@@ -231,14 +231,23 @@ footer{
 .texto-contacto p{
     color: #000;
 }
+
+/*Form*/
 .form-contacto{
     width: 50%;
-    padding: 40px;
+    padding: 20px;
 }
 .form-contacto h2{
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 10%;
+}
+.form-content{
+    display: flex;
+}
+.col-2{
+    margin-left: 30%;
+    align-items: center;
 }
 .input-box{
     position: relative;
@@ -247,8 +256,8 @@ footer{
 }
 .input-box input,
 .input-box textarea{
-    width: 100%;
-    padding: 5px 0;
+    width: 300px;
+    padding: 5px;
     font-size: 16px;
     margin: 10px 0;
     border: none;
@@ -282,7 +291,54 @@ footer{
     cursor: pointer;
     padding: 10px;
     font-size: 18px;
-    margin-top: 5%;
+}
+#enviar{
+    margin-left: 30%;
+    margin-top: 7%;
+}
+/*Select box*/
+.select-box{
+    width: 300px;
+    color: #E96C12;
+}
+.select-box select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    color: #666;
+    background-color: #f8f8f8;
+    border: 2px solid #E96C12;
+    border-radius: 4px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+.select-box select:focus {
+    border-color: #E96C12;
+    box-shadow: 0 0 5px rgba(233, 108, 18, 0.5);
+}
+.form-contacto h4{
+    color: #666;
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+/*Radio buttons*/
+.content-rb{
+    display: flex;
+    gap: 70px;
+}
+.rb{
+    margin-top: 4%;
+    display: flex;
+}
+.rb label {
+    margin-left: 10px;
+    cursor: pointer;
 }
 /*Preguntas frecuentes*/
 .preguntas{

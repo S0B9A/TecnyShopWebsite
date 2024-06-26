@@ -11,8 +11,8 @@
     <header class="header">
 
         <div class="menu container">
-            <a href="#" class="logo"><img src="Images/Logo TecnyShop.png" alt="Logo de la empresa" class="LogoImg"></a>
-            <a href="#" class="logoName">Grupo Unfried</a>
+            <a href="index.html" class="logo"><img src="Images/Logo TecnyShop.png" alt="Logo de la empresa" class="LogoImg"></a>
+            <a href="index.html" class="logoName">Grupo Unfried</a>
             <nav class="navbar">
                 <ul>
                     <li> <a href="index.html" class="itemNav"> Inicio </a> </li>
@@ -34,29 +34,68 @@
             <div class="container-contacto">
 
                 <div class="form-contacto">
-                    <form>
-                        <h2>Envíenos un mensaje</h2>    
-                        <div class="input-box">
-                            <input type="text" name="" required="required">
-                            <span>Nombre Completo</span>
-                        </div>
+                    <form>  
+                        <div class="form-content">
+                            <div class="col-1">
+                                <div class="input-box">
+                                    <input type="text" name="" required="required">
+                                    <span>Nombre Completo</span>
+                                </div>
+            
+                                <div class="input-box">
+                                    <input type="text" name="" required="required">
+                                    <span>Email</span>
+                                </div>
+                                
+                                <div class="input-box">
+                                    <input type="text" name="" required="required">
+                                    <span>Teléfono (+506)</span>
+                                </div>
+
+                                <div class="input-box">
+                                    <textarea required="required"></textarea>
+                                    <span>Escribe tu Mensaje...</span>
+                                </div>
+                            </div>
     
-                        <div class="input-box">
-                            <input type="text" name="" required="required">
-                            <span>Email</span>
+                            <div class="col-2">
+                                <div class="select-box">
+                                    <h4>Provincia</h4>
+                                    <select>
+                                        <option>San José</option>
+                                        <option>Alajuela</option>
+                                        <option>Cartago</option>
+                                        <option>Heredia</option>
+                                        <option>Guanacaste</option>
+                                        <option>Puntarenas </option>
+                                        <option>Limón</option>
+                                    </select>
+                                </div>
+
+                                <div class="radio-buttons">
+                                    <h4>Género</h4>
+                                    <div class="content-rb">
+                                        <div class="rb">
+                                            <input type="radio" name="genero" id="masculino" checked>
+                                            <label for="masculino">Masculino</label>
+                                        </div>
+
+                                        <div class="rb">
+                                            <input type="radio" name="genero" id="femenino">
+                                            <label for="femenino">Femenino</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="input-box" id="enviar">
+                                    <input type="submit" name="" required="Send">
+                                </div>
+                            </div>
                         </div>
-    
-                        <div class="input-box">
-                            <textarea required="required"></textarea>
-                            <span>Escribe tu Mensaje...</span>
-                        </div>
-    
-                        <div class="input-box">
-                            <input type="submit" name="" required="Send">
-                        </div>
+                    
                     </form>
                 </div>
-
+                
                 <div class="contactoInfo">
                     <div class="box-contacto">
                         <i class="fa-solid fa-location-dot icon"></i>
