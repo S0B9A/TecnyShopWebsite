@@ -5,10 +5,6 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-<<<<<<< HEAD
-    scroll-behavior: smooth;
-=======
->>>>>>> d92ac0d29cf4307a0851e428d03db347b74b005e
 }
 
 /* Fuente principal */
@@ -228,7 +224,8 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 35px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .txt h2 {
@@ -243,6 +240,7 @@ footer {
 .producto img {
     margin: 0 5px;
     width: 190px;
+    height: 190px;
     border-radius: 15px;
     transition: all 240ms ease;
 }
@@ -264,9 +262,74 @@ footer {
     color: #536B83;
 }
 
+  /* Menú lateral */
+  #btn-menu {
+    display: none;
+}
+
+.container-menuLateral {
+    position: fixed;
+    background: rgba(245, 142, 7, 0.836);
+    width: 15%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#btn-menu:checked ~ .container-menuLateral {
+    opacity: 1;
+    visibility: visible;
+}
+
+.cont-menuLateral {
+    position: fixed;
+    width: 100%;
+    max-width: 250px;
+    background: #bebcb8;
+    height: 100vh;
+    position: relative;
+    transition: all 500ms ease;
+    transform: translateX(-100%);
+}
+
+#btn-menu:checked ~ .container-menuLateral .cont-menuLateral {
+    transform: translateX(0%);
+}
+
+.cont-menuLateral nav {
+    transform: translateY(15%);
+}
+
+.cont-menuLateral nav a {
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #000000;
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+}
+
+.cont-menuLateral nav a:hover {
+    border-left: 5px solid #c7c7c7;
+    background: #f88e03;
+}
+
+.cont-menuLateral label {
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+}
+/* Fin de Menú lateral */
+	
 /* About */
 .about {
-    padding: 100px 50px;
+    padding: 60px 50px;
 }
 
 .about-content {
@@ -329,7 +392,7 @@ footer {
 
 /* News */
 .news {
-    padding: 20px 50px;
+    padding: 10px 50px;
 }
 
 .news-content {
