@@ -136,182 +136,73 @@ span {
     margin-top: 1%;
 }
 
-/*Sobre el logo*/
+/*Section de autores*/
 
-.logoMuestra  {
-    padding: 150px 250px;
-    display: flex;
-    align-items: center;
-}
-
-.logoMuestra-img {
-    width: 30%;
-    flex-basis: 50%;
-}
-
-.logoMuestra-img img {
-    width: 72%;
-}
-
-.logoMuestra-img img:hover {
-    transition: all 240ms ease;
-    width: 78%;
-}
-
-.logoMuestra-txt {
-    margin-right: 60px;
-    flex-basis: 50%;
-}
-
-.logoMuestra-txt h2 {
-    margin-bottom: 30px;
-}
-
-/*Historia*/
-
-.historia-Informacion {
-    background:
-        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-        url(../Images/BannerProductos.png);
-        width: 100%;
-        height: 300px;
-        padding: 7%;
-        background-position: center;
-        background-size: cover;
-        background-attachment: fixed;
-}
-
-.historia-content {
+.autores {
+    padding: 100px 0; /* Reducido el padding superior e inferior */
     text-align: center;
-}
-
-.historia-content h2 {
-    font-size: 30px;
-    color: #F9FAFC;
-    text-transform: uppercase;
-    text-transform: initial capitalize;
-    margin-left: 10px;
-    margin-top: 20px;
-}
-
-.historia-content p {
-    font-size: 14px;
-    color: #c5c5c5;
-    margin-left: 110px;
-}
-
-/*Section de informacion*/
-
-.informacion {
-    margin-top: 60px;
     background-color: white;
-    margin-bottom: 60px;
-}
-
-.informacion-content {
-    display: flex;
-    flex-wrap: wrap;
-    /* Asegura que el contenido se ajuste bien en pantallas pequeñas */
-}
-
-.informacion-txt {
-    flex-basis: 50%;
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 80px 0 0 0;
-}
-
-.informacion-txt :hover {
-    transition: all 250ms ease;
-    font-weight: bold;
-}
-
-.informacion-txt span {
-    font-size: 13px;
-    font-weight: 800;
-    color: #E96C12;
-    margin-top: 30px;
-}
-
-.informacion-txt h3 {
-    font-size: 25px;
-    margin-top: 6px;
-    color: #536B83;
-}
-
-.informacion-txt hr {
-    margin-top: 10px;
-    margin-left: 12px;
-    height: 2px;
-    /* Ajusta el grosor */
-}
-
-.informacion-txt p {
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-
-::placeholder {
-    color: #536B83;
-}
-
-.informacion-img {
-    flex-basis: 50%;
-    display: flex;
-    /* Añadir display flex para centrar la imagen */
-    align-items: center;
-    /* Centrar verticalmente */
-    justify-content: center;
-    /* Centrar horizontalmente */
-}
-
-.informacion-img :hover {
-    transition: all 250ms ease;
-    border: solid chocolate;
-}
-
-.informacion-img img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    /* Hace que la imagen cubra todo el espacio sin distorsionarse */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-    filter: brightness(0.7);
-    /* Aplica un filtro oscuro */
 }
 
-/* Carreras */
-
-
-.carreras-Informacion {
-    background:
-        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-        url(../Images/BannerProductos.png);
-        width: 100%;
-        height: 300px;
-        padding: 7%;
-        background-position: center;
-        background-size: cover;
-        background-attachment: fixed;
+.autores span{
+    font-size: 16px;
+    font-weight: 800;
+    color: #E96C12
 }
 
-.carreras-content {
+.autores hr{
+    margin: 0 auto; /* Centrar horizontalmente el hr */
+    width: 50%; /* Ajustar el ancho del hr */
+    border: none; /* Asegurar que no haya borde */
+    border-top: 1px solid #E96C12 /* Estilo de la línea */
+}
+
+.autores-content {
+    display: flex;
+    margin-top: 35px;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que los productos se envuelvan en varias líneas */
+}
+
+.autores-content :hover:not(p):not(h3):not(span):not(.producto-txt):not(img) {
+    transition: all 300ms ease;
+    transform: translateY(-3%);
+    box-shadow: 0 .3rem 5rem rgba(0, 0, 0, 0.3);
+}
+
+.autor-1 {
+    margin: 30px;
+    flex-basis: calc(30% - 150px); /* Ajustado el tamaño de cada producto */
+    background-color: #f1f0f0;
+    border: 1px solid #536B83;
     text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 
-.carreras-content h2 {
-    font-size: 30px;
-    color: #F9FAFC;
-    text-transform: uppercase;
-    text-transform: initial capitalize;
-    margin-left: 10px;
-    margin-top: 20px;
+.autor-1 img {
+    margin-bottom: 10px; /* Margen inferior de la imagen reducido */
+    width: 100%; /* Ancho de la imagen ajustado para ocupar todo el espacio disponible */
+    height: 60%;
 }
 
-.carreras-content p {
-    font-size: 14px;
-    color: #c5c5c5;
-    margin-left: 110px;
+.autor-txt {
+    padding: 15px; /* Padding del texto reducido */
+}
+
+.autor-txt span {
+    color: #536B83;
+    font-size: 15px;
+}
+
+.autor-txt h3 {
+    color: #E96C12;
+    font-size: 16px; /* Tamaño del título reducido */
+    margin: 10px 0; /* Margen del título ajustado */
+}
+
+.autor-txt p {
+    font-size: 12px;
 }
 
 /*Footer*/

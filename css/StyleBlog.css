@@ -262,9 +262,14 @@ footer {
     color: #536B83;
 }
 
-  /* Menú lateral */
-  #btn-menu {
+
+/* Menú lateral */
+#btn-menu {
     display: none;
+}
+
+#btn-menuLateral{
+    color: #E96C12;
 }
 
 .container-menuLateral {
@@ -279,7 +284,7 @@ footer {
     visibility: hidden;
 }
 
-#btn-menu:checked ~ .container-menuLateral {
+#btn-menu:checked~.container-menuLateral {
     opacity: 1;
     visibility: visible;
 }
@@ -288,14 +293,14 @@ footer {
     position: fixed;
     width: 100%;
     max-width: 250px;
-    background: #bebcb8;
+    background: #f8f3f3;
     height: 100vh;
     position: relative;
     transition: all 500ms ease;
     transform: translateX(-100%);
 }
 
-#btn-menu:checked ~ .container-menuLateral .cont-menuLateral {
+#btn-menu:checked~.container-menuLateral .cont-menuLateral {
     transform: translateX(0%);
 }
 
@@ -313,7 +318,7 @@ footer {
 }
 
 .cont-menuLateral nav a:hover {
-    border-left: 5px solid #c7c7c7;
+    border-left: 5px solid #f8f3f3;
     background: #f88e03;
 }
 
@@ -321,12 +326,13 @@ footer {
     position: absolute;
     right: 5px;
     top: 10px;
-    color: #fff;
+    color: #ffff;
     cursor: pointer;
     font-size: 18px;
 }
+
 /* Fin de Menú lateral */
-	
+
 /* About */
 .about {
     padding: 60px 50px;
@@ -336,7 +342,9 @@ footer {
     display: flex;
 }
 
-.about-1, .about-in1, .about-in2 {
+.about-1,
+.about-in1,
+.about-in2 {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -353,20 +361,28 @@ footer {
     height: 500px;
 }
 
-.about-1:hover, .about-in1:hover, .about-in2:hover {
+.about-1:hover,
+.about-in1:hover,
+.about-in2:hover {
     border: solid chocolate;
 }
 
-.about-1 img, .about-in1 img, .about-in2 img {
+.about-1 img,
+.about-in1 img,
+.about-in2 img {
     width: 10%;
     transition: all 150ms ease;
 }
 
-.about-1 img:hover, .about-in1 img:hover, .about-in2 img:hover {
+.about-1 img:hover,
+.about-in1 img:hover,
+.about-in2 img:hover {
     width: 13%;
 }
 
-.about-1 h3, .about-in1 h3, .about-in2 h3 {
+.about-1 h3,
+.about-in1 h3,
+.about-in2 h3 {
     font-size: 12px;
     color: #E0FFFF;
     margin-left: 15px;
@@ -377,7 +393,8 @@ footer {
     margin-left: 10px;
 }
 
-.about-in1, .about-in2 {
+.about-in1,
+.about-in2 {
     height: 245px;
     margin-bottom: 10px;
 }
